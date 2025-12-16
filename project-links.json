@@ -1,4 +1,4 @@
 {
-  "finance-tracker": "./static/finance-tracker/index.html",
-  "weather-dashboard": "../Weather%20App/index.html"
+  "finance-tracker": "https://github.com/kensingtonophelia19-cpu/finance-tracker",
+  "weather-dashboard": "https://github.com/kensingtonophelia19-cpu/Weather-App"
 }
