@@ -44,6 +44,32 @@
             transform: translateY(-5px);
         }
 
+        /* Project Image Hover Effect */
+        .project-image-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .project-image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .project-img-2 {
+            opacity: 0;
+        }
+
+        .project-card:hover .project-img-2 {
+            opacity: 1;
+        }
+
         /* Chat Widget Styles */
         .chat-widget {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -374,10 +400,11 @@
                 <!-- Project 1 -->
                 <div data-project="finance-tracker"
                     class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden project-card transition-all duration-300">
-                    <div class="h-48 bg-slate-200 relative group">
-                        <!-- Project Image Placeholder -->
-                        <div class="absolute inset-0 flex items-center justify-center text-slate-400 bg-slate-800">
-                            <i class="fas fa-chart-line text-4xl"></i>
+                    <div class="h-48 bg-slate-200 relative group overflow-hidden">
+                        <!-- Project Images -->
+                        <div class="project-image-container">
+                            <img src="images/finance1.png" alt="Finance Tracker Main" class="project-img-1">
+                            <img src="images/finance2.png" alt="Finance Tracker Detail" class="project-img-2">
                         </div>
                     </div>
                     <div class="p-6">
@@ -392,13 +419,14 @@
                             </div>
                         </div>
                         <p class="text-slate-600 text-sm mb-4">
-                            A web application to track personal expenses using React and Firebase. Features include data
-                            visualization and budget setting.
+                            A web application to track personal expenses. And as a standalone static
+                            application using React. Features include data visualization and budget
+                            setting.
                         </p>
                         <div class="flex flex-wrap gap-2 mt-auto">
                             <span class="text-xs font-semibold px-2 py-1 bg-blue-50 text-blue-600 rounded">React</span>
-                            <span
-                                class="text-xs font-semibold px-2 py-1 bg-yellow-50 text-yellow-600 rounded">Firebase</span>
+                            <span class="text-xs font-semibold px-2 py-1 bg-yellow-50 text-yellow-600 rounded">Static
+                                Build</span>
                         </div>
                     </div>
                 </div>
@@ -438,9 +466,11 @@
                 <!-- Project 3 -->
                 <div data-project="weather-dashboard"
                     class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden project-card transition-all duration-300">
-                    <div class="h-48 bg-slate-200 relative group">
-                        <div class="absolute inset-0 flex items-center justify-center text-slate-400 bg-slate-800">
-                            <i class="fas fa-cloud text-4xl"></i>
+                    <div class="h-48 bg-slate-200 relative group overflow-hidden">
+                        <!-- Project Images -->
+                        <div class="project-image-container">
+                            <img src="images/weather1.png" alt="Weather Dashboard Main" class="project-img-1">
+                            <img src="images/weather2.png" alt="Weather Dashboard Detail" class="project-img-2">
                         </div>
                     </div>
                     <div class="p-6">
