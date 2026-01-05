@@ -70,6 +70,19 @@
             opacity: 1;
         }
 
+        .project-img-3 {
+            opacity: 0;
+        }
+
+        /* Use image 3 for hover on n8n project */
+        [data-project="n8n-agent"]:hover .project-img-2 {
+            opacity: 0;
+        }
+
+        [data-project="n8n-agent"]:hover .project-img-3 {
+            opacity: 1;
+        }
+
         /* Chat Widget Styles */
         .chat-widget {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -437,9 +450,11 @@
                     <div class="h-48 bg-slate-200 relative group overflow-hidden">
                         <!-- Project Images -->
                         <div class="project-image-container">
-                            <img src="images/screenshot_workflow.png" alt="n8n Workflow" class="project-img-1">
-                            <img src="images/screenshot_Content Repurposing Agent.png" alt="Content Repurposing Agent"
+                            <img src="images/Autonomous Research Agent 1.png" alt="Autonomous Research Agent 1" class="project-img-1">
+                            <img src="images/Autonomous Research Agent 2.png" alt="Autonomous Research Agent 2"
                                 class="project-img-2">
+                            <img src="images/Autonomous Research Agent 3.png" alt="Autonomous Research Agent 3"
+                                class="project-img-3">
                         </div>
                     </div>
                     <div class="p-6">
