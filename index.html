@@ -40,8 +40,56 @@
             border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         }
 
+        .project-card {
+            cursor: default;
+        }
+
         .project-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Project title link styling */
+        .project-title-link {
+            text-decoration: none;
+        }
+
+        .project-title-link:hover h3 {
+            color: #3b82f6;
+        }
+
+        /* Tooltip enhancement for action icons */
+        .project-actions a {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .project-actions a[title]:hover::after {
+            content: attr(title);
+            position: absolute;
+            bottom: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1e293b;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            z-index: 1000;
+            pointer-events: none;
+        }
+
+        .project-actions a[title]:hover::before {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 4px solid transparent;
+            border-bottom-color: #1e293b;
+            z-index: 1000;
+            pointer-events: none;
         }
 
         /* Project Image Hover Effect */
@@ -422,13 +470,17 @@
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-lg font-bold text-slate-900">Finance Tracker App</h3>
-                            <div class="flex gap-3 text-slate-400">
-                                <a href="https://github.com/kensingtonophelia19-cpu" target="_blank" rel="noopener"
-                                    class="hover:text-blue-600 transition-colors"><i
-                                        class="fab fa-github text-lg"></i></a>
-                                <a href="#" class="hover:text-blue-600 transition-colors"><i
-                                        class="fas fa-external-link-alt text-lg"></i></a>
+                            <a href="#" class="project-title-link text-lg font-bold text-slate-900 hover:text-blue-600 transition-colors">
+                                <h3>Finance Tracker App</h3>
+                            </a>
+                            <div class="project-actions flex gap-3 text-slate-400">
+                                <a href="https://github.com/kensingtonophelia19-cpu/finance-tracker" target="_blank" rel="noopener noreferrer"
+                                    class="hover:text-blue-600 transition-colors relative group/icon" title="View Code on GitHub" aria-label="View Code on GitHub">
+                                    <i class="fab fa-github text-lg"></i>
+                                </a>
+                                <a href="#" class="hover:text-blue-600 transition-colors relative group/icon" title="Live Demo" aria-label="Live Demo" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt text-lg"></i>
+                                </a>
                             </div>
                         </div>
                         <p class="text-slate-600 text-sm mb-4">
@@ -459,13 +511,17 @@
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-lg font-bold text-slate-900">n8n Autonomous Research Agent</h3>
-                            <div class="flex gap-3 text-slate-400">
+                            <a href="#" class="project-title-link text-lg font-bold text-slate-900 hover:text-blue-600 transition-colors">
+                                <h3>n8n Autonomous Research Agent</h3>
+                            </a>
+                            <div class="project-actions flex gap-3 text-slate-400">
                                 <a href="https://github.com/kensingtonophelia19-cpu/n8n-autonomous-research-agent"
-                                    target="_blank" rel="noopener" class="hover:text-blue-600 transition-colors"><i
-                                        class="fab fa-github text-lg"></i></a>
-                                <a href="#" class="hover:text-blue-600 transition-colors"><i
-                                        class="fas fa-external-link-alt text-lg"></i></a>
+                                    target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition-colors relative group/icon" title="View Code on GitHub" aria-label="View Code on GitHub">
+                                    <i class="fab fa-github text-lg"></i>
+                                </a>
+                                <a href="#" class="hover:text-blue-600 transition-colors relative group/icon" title="Live Demo" aria-label="Live Demo" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt text-lg"></i>
+                                </a>
                             </div>
                         </div>
                         <p class="text-slate-600 text-sm mb-4">
@@ -493,13 +549,17 @@
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-lg font-bold text-slate-900">Weather Dashboard</h3>
-                            <div class="flex gap-3 text-slate-400">
-                                <a href="https://github.com/kensingtonophelia19-cpu" target="_blank" rel="noopener"
-                                    class="hover:text-blue-600 transition-colors"><i
-                                        class="fab fa-github text-lg"></i></a>
-                                <a href="#" class="hover:text-blue-600 transition-colors"><i
-                                        class="fas fa-external-link-alt text-lg"></i></a>
+                            <a href="#" class="project-title-link text-lg font-bold text-slate-900 hover:text-blue-600 transition-colors">
+                                <h3>Weather Dashboard</h3>
+                            </a>
+                            <div class="project-actions flex gap-3 text-slate-400">
+                                <a href="https://github.com/kensingtonophelia19-cpu/Weather-App" target="_blank" rel="noopener noreferrer"
+                                    class="hover:text-blue-600 transition-colors relative group/icon" title="View Code on GitHub" aria-label="View Code on GitHub">
+                                    <i class="fab fa-github text-lg"></i>
+                                </a>
+                                <a href="#" class="hover:text-blue-600 transition-colors relative group/icon" title="Live Demo" aria-label="Live Demo" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt text-lg"></i>
+                                </a>
                             </div>
                         </div>
                         <p class="text-slate-600 text-sm mb-4">

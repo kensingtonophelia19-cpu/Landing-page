@@ -1,5 +1,14 @@
 {
-  "finance-tracker": "https://github.com/kensingtonophelia19-cpu/finance-tracker",
-  "weather-dashboard": "https://github.com/kensingtonophelia19-cpu/Weather-App",
-  "n8n-agent": "https://github.com/kensingtonophelia19-cpu/n8n-autonomous-research-agent"
+  "finance-tracker": {
+    "github": "https://github.com/kensingtonophelia19-cpu/finance-tracker",
+    "liveDemo": "https://finance-tracker-five-ashy.vercel.app/"
+  },
+  "weather-dashboard": {
+    "github": "https://github.com/kensingtonophelia19-cpu/Weather-App",
+    "liveDemo": "https://weather-app-pi-three-51.vercel.app/"
+  },
+  "n8n-agent": {
+    "github": "https://github.com/kensingtonophelia19-cpu/n8n-autonomous-research-agent",
+    "liveDemo": ""
+  }
 }
