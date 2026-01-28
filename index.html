@@ -545,7 +545,32 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
+                <!-- Project 3: n8n Projects -->
+                <div class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden project-card transition-all duration-300 cursor-pointer"
+                    data-project="n8n-projects" onclick="document.getElementById('n8n-modal').showModal()">
+                    <div class="h-48 bg-gradient-to-br from-purple-50 to-purple-100 relative group overflow-hidden flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-layer-group text-6xl text-purple-400 mb-3"></i>
+                            <p class="text-purple-600 font-semibold">More n8n Projects</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-lg font-bold text-slate-900">n8n Projects Collection</h3>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Explore a collection of additional n8n automation projects and workflows built with advanced orchestration techniques.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span
+                                class="text-xs font-semibold px-2 py-1 bg-purple-50 text-purple-600 rounded">n8n</span>
+                            <span
+                                class="text-xs font-semibold px-2 py-1 bg-blue-50 text-blue-600 rounded">Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
                 <div class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden project-card transition-all duration-300"
                     data-project="weather-dashboard">
                     <div class="h-48 bg-slate-200 relative group overflow-hidden">
@@ -670,6 +695,65 @@
         </div>
     </footer>
 
+
+    <!-- n8n Projects Modal -->
+    <dialog id="n8n-modal" class="rounded-lg p-0 shadow-2xl max-w-2xl w-full md:w-full mx-auto backdrop:bg-black/50">
+        <div class="p-8">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-slate-900">n8n Projects</h2>
+                <button onclick="document.getElementById('n8n-modal').close()" class="text-slate-400 hover:text-slate-600 transition-colors">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            
+            <p class="text-slate-600 mb-6">Check out these advanced n8n automation projects on Notion:</p>
+            
+            <div class="space-y-4">
+                <!-- Project 1 -->
+                <a href="https://www.notion.so/AI-Voice-SMS-Agent-2df712356798805a9646deca05e6eb6d?source=copy_link" 
+                   target="_blank" rel="noopener noreferrer"
+                   class="block p-4 border border-slate-200 rounded-lg hover:border-purple-400 hover:bg-purple-50 transition-all group">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0 mt-1">
+                            <i class="fas fa-microphone text-purple-600 text-lg"></i>
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-slate-900 group-hover:text-purple-600 transition-colors">AI Voice & SMS Agent</h3>
+                            <p class="text-sm text-slate-600 mt-1">An advanced n8n workflow for handling AI-powered voice and SMS communications with intelligent routing and response generation.</p>
+                        </div>
+                        <div class="flex-shrink-0 text-slate-400 group-hover:text-purple-600 transition-colors">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="https://www.notion.so/Automated-Volleyball-Content-Engine-2f67123567988032a21de7884e38e811?source=copy_link" 
+                   target="_blank" rel="noopener noreferrer"
+                   class="block p-4 border border-slate-200 rounded-lg hover:border-purple-400 hover:bg-purple-50 transition-all group">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0 mt-1">
+                            <i class="fas fa-video text-purple-600 text-lg"></i>
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-slate-900 group-hover:text-purple-600 transition-colors">Automated Volleyball Content Engine</h3>
+                            <p class="text-sm text-slate-600 mt-1">A sophisticated n8n automation that processes volleyball match data and generates engaging content across multiple platforms automatically.</p>
+                        </div>
+                        <div class="flex-shrink-0 text-slate-400 group-hover:text-purple-600 transition-colors">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-slate-200 flex justify-end">
+                <button onclick="document.getElementById('n8n-modal').close()" 
+                        class="px-6 py-2 bg-slate-100 text-slate-900 rounded-lg font-medium hover:bg-slate-200 transition-colors">
+                    Close
+                </button>
+            </div>
+        </div>
+    </dialog>
 
     <!-- JavaScript for Interactions and Gemini API -->
     <script>
